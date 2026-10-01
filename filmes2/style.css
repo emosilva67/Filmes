@@ -223,11 +223,35 @@ filme p{
 .disponivel{
 	width: 1000px;
 }
-.disponivel{
+.disponivel ul{
 	display: flex;
 	justify-content: space-between;
 	width: 1000px;
 	margin: 20px;
 }
 .disponivel ul li{
+	list-style: none;
+	background: red;
+	color: white;
+	padding: 4px 7px;
+	font-size: 22px;
+	border-radius: 7px;
+}
+.disponivel ul li:hover{
+	color:black;
+}
+/* menu dropdown */
+.dropdown-content{
+	display: none;
+}
+.dropdown:hover .dropdown-content{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	background: black;
+	padding: 0 10px;
 	
+}
+.dropdown-content a{
+	padding: 7px 0;
+}
