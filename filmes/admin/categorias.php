@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categorias</title>
+<?php
+	include("conexao.php");
+?>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
     <ul>
         <li><a href="categorias.html">Categorias</li>
         <li><a href="filmes.html">Filmes</li>
@@ -18,7 +14,9 @@
         </form>
     </main>
 <?php
-	echo $_GET['categorias];
+	if(isset($_GET['salvar'])){
+	echo $_GET['categoria'];
+    }
 ?>  
 </body>
 </html>
