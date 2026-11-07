@@ -3,8 +3,8 @@
 ?>
     <link rel="stylesheet" href="style.css">
     <ul>
-        <li><a href="categorias.html">Categorias</li>
-        <li><a href="filmes.html">Filmes</li>
+        <li><a href="categorias.html">Categorias</a></li>
+        <li><a href="filmes.html">Filmes</a></li>
     </ul>
     <main>
         <form>
@@ -15,9 +15,12 @@
     </main>
 <?php
 	if(isset($_GET['salvar'])){
-	echo $_GET['categoria'];
-    }
+	$nomeCategoria = $_GET['categoria'];
+     
+	echo $sql = "	INSERT INTO categoria (nome) values ('$nomeCategoria')"; 
+	
+	$conexao->query($sql);
+	}
+
 ?>  
-</body>
-</html>
 
