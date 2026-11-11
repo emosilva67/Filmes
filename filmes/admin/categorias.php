@@ -17,10 +17,13 @@
 	if(isset($_GET['salvar'])){
 	$nomeCategoria = $_GET['categoria'];
      
-	echo $sql = "	INSERT INTO categoria (nome) values ('$nomeCategoria')"; 
+	 $sql = "INSERT INTO categoria (nome) values ('$nomeCategoria')"; 
 	
 	$conexao->query($sql);
 	}
+
+	$sql = "SELECT * FROM categoria";
+	$resultado = $conn-query($sql);
 
 ?>  
 
