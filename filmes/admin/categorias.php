@@ -22,8 +22,12 @@
 	$conexao->query($sql);
 	}
 
-	$sql = "SELECT * FROM categoria";
-	$resultado = $conn-query($sql);
+$sql = "SELECT * FROM categoria";
+$resultado = $conexao-query($sql);
+
+while ($obj = $resultado->fetch_assoc()){
+	echo $obj['nome']."<BR>";
+}
 
 ?>  
 

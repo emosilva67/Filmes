@@ -1,0 +1,73 @@
+*{
+margin:0;
+padding:0;
+
+}
+
+.login form{
+width: 400px;
+background: #eee;
+margin: 0 auto;
+padding: 20px;
+border-radius: 20px;
+}
+.login form h1{
+text-align: center;
+}
+
+.login form input{
+width:100%;
+height: 40px;
+text-align: center;
+margin: 5px;
+margin-top: 15px;
+border-radius:15px;
+}
+
+button{
+width:100%;
+height:40px;
+background: #fff;
+border-radius: 5px;
+}
+
+button:hover{
+cursor: pointer;
+color: #000;
+background: #fff;
+}
+
+/*categoria*/
+
+ ul{
+height: 60px;
+display: flex;
+justify-content:center;
+align-items: center;
+background: #ddd;
+
+}
+ ul li {
+list-style:none;
+margin:15px;
+
+}
+
+ ul li a{
+text-decoration:none;
+font-size: 19px;
+color: #333;
+padding: 30px;
+}
+
+ ul li a:hover{
+background: #ccc;
+}
+
+#categoria h2{
+text-align:center;
+}
+
+#categoria form{
+text-align: center;
+}
