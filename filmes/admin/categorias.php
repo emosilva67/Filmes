@@ -23,11 +23,15 @@
 	}
 
 $sql = "SELECT * FROM categoria";
-$resultado = $conexao-query($sql);
+$resultado = $conexao->query($sql);
 
 while ($obj = $resultado->fetch_assoc()){
-	echo $obj['nome']."<BR>";
+	
+	echo $obj['id']." - ".$obj['nome']."<a href='?editar='>Editar</a><br>";;
 }
 
+if(isset($_GET['editar'])){
+	echo "entrou, la ele";
+}
 ?>  
 
